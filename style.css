@@ -2,4 +2,22 @@ h1 {
     color:darkcyan;
     font-size: 60 px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 20px;
+}
+p {
+    font-size: 20 px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 20px;
+    margin-right: 400px;
+}
+img{
+    margin-left: 20px;
+    width:50%;
+
+}
+a{
+    font-size: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left:20px;
+
 }
