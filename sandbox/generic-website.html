@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Generic Website</title>
     <style>
         body{
             margin:0;
+        }
+        img{
+            width:100%;
+
+        }
+        a{
+            text-decoration:none;
         }
         header{
             background-image: url('images/backgroundimage.jpg');
@@ -31,6 +38,8 @@
         nav li{
             flex:1;
             text-align: center;
+            padding:10px;
+            transition:1s;
         }
         nav li:hover{
             background: rgba(23, 75, 84, 0.6);
@@ -65,6 +74,18 @@
             color:white;
             padding: 60px 100px 40px 100px;
         }
+        .left{
+            display:flex;
+        }
+        .left article{
+            flex:1;
+        }
+        .right{
+            padding-left:60px;
+        }
+        .feature-img{
+            padding:10px;
+        }
     </style>
 </head>
 <body>
@@ -82,7 +103,12 @@
     <main>
         <section class="flex">
             <div class="left">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsa expedita culpa. Autem, architecto incidunt perferendis pariatur provident voluptates consectetur sequi vel quod ipsam distinctio dignissimos id nesciunt iure. Provident.</p>
+                <article>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsa expedita culpa. Autem, architecto incidunt perferendis pariatur provident voluptates consectetur sequi vel quod ipsam distinctio dignissimos id nesciunt iure. Provident.</p>
+                </article>
+                <article>
+                    <img class="feature-img" src="http://placekitten.com/400/500" alt=""></img>
+                </article>
             </div>
             <div class="right">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsa expedita culpa. Autem, architecto incidunt perferendis pariatur provident voluptates consectetur sequi vel quod ipsam distinctio dignissimos id nesciunt iure. Provident.</p>
