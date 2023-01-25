@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colors and layers</title>
+    <style>
+        main{
+            display:flex;
+            border:4px solid cornflowerblue;
+            margin: 80px;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: #ccc;
+
+        }
+        .one{ 
+            position: absolute;
+            /* background: #ff9900; */
+            background: rgba(255, 153, 0, .5)
+        }
+        .two{ /* background: #49e34e; */
+            margin-top: 300px;
+            background: rgba(73, 227, 78, .5)
+        
+        }
+        .three{ background: #ac54bd;}
+        .big-box{
+            position: relative;
+            border:4px solid red;
+            width:60%;
+            height: 600px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="big-box">
+            <div class="one"></div>
+        </section>
+        <div class="two"></div>
+        <div class="three"></div>
+
+    </main>
+</body>
+</html>
