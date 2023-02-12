@@ -1,5 +1,5 @@
 h1 {
-    color:darkcyan;
+    color:white;
     font-size: 60 px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 20px;
@@ -13,11 +13,12 @@ p {
     font-size: 22 px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin-left: 20px;
-    margin-right: 400px;
+    margin-right: 600px;
 }
 img{
     margin-left: 20px;
-    width:40%;
+    width:30%;
+    margin-bottom: 20px;
 
 }
 a{
