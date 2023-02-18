@@ -7,21 +7,31 @@
     src:url("itcbenguiatbook.ttf");
 }
 .topnav{
+    position:fixed;
+    top:0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color:black;
     font-size: 30px;
     font-family: Benguiat Pro ITC Book;
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
 }
 .topnav a{
     color:white;
+    margin-right: 40px;
+    margin-left: 40px;
 }
 .topnav a:hover{
     color:#E72E25;
 }
 .topnav a.active{
     font-family: Benguiat Pro ITC;
+    color:#E72E25;
 }
 img{
-    width:105%;
+    width:100%;
 }
 p{
     color: white;
@@ -29,4 +39,91 @@ p{
     font-size:30px;
     margin-left: 210px;
     margin-right:210px;
+    margin-bottom: 5px;
+}
+p.subhead{
+    margin-left:85px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom:40px;
+}
+p.character{
+    margin-left:0px;
+    margin-right:0px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size:25px;
+}
+p.actor{
+    margin-left:0px;
+    margin-right:0px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:20px;
+    margin-bottom: 30px;
+}
+body {
+    color: #fff;
+    margin:0;
+    background:#000;
+}
+section.gallery {
+    margin-left:85px;
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 0px;
+}
+section.gallery p {
+    margin-top:0;
+    margin-right:0px;
+}
+.card:nth-child(even) img{
+    width:226px;
+    height:226px;
+    object-fit:cover;
+    border:8px solid #E72E25;
+}
+.card:nth-child(odd) img {
+    width:226px;
+    height:226px;
+    object-fit:cover;
+    border:8px solid rgb(93, 161, 203);
+}
+.red{
+    background-color: #832623;
+    padding-top: 15px;
+    padding-bottom:70px;
+    margin-bottom: 90px;
+    margin-top: 70px;
+}
+p.villain{
+    margin-left: 85px;
+    width:40%;
+}
+.moments{
+    display:flex;
+}
+li{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:30px;
+    list-style:none;
+    margin-left: 85px;
+    padding-bottom: 20px;
+}
+.notable{
+    margin-left:85px;
+    width: 670px;
+    height:670px;
+    object-fit:cover;
+    border:8px solid rgb(93, 161, 203);
+}
+.content{
+    flex:auto;
+}
+.netflix{
+    display:flex;
+    align-items: center;
+    max-width:150px;
+    padding: 70px;
 }

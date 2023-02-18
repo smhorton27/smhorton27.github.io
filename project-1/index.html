@@ -15,18 +15,43 @@
             src:url("itcbenguiatbook.ttf");
         }
         h1{
+            margin-top: 180px;
+            line-height:100%;
             color:white;
             font-family: Benguiat Pro ITC;
             font-size: 200px;
             text-align: center;
+            -webkit-text-fill-color: black;
+            -webkit-text-stroke-width: 6px;
+            -webkit-text-stroke-color: #E72E25;
+        }
+        .container{
+            display:flex;
+            justify-content:center space-between;
         }
         a{
+            flex:1;
             color:white;
             font-family: Benguiat Pro ITC Book;
             font-size: 50px;
+            text-align: center;
+            text-decoration:none;
+            display: inline-block;
+            padding: 0 7px;
+            position: relative;
+        }
+        a:not(:last-child)::after{
+            content:"";
+            border:2px solid white;
+            border-width: 4px 4px 0 0;
+            position:absolute;
+            right:-3px;
+            top:0;
+            height:100%;
         }
         a:hover{
             color:#E72E25;
+            text-decoration: none;
         }
         p{
             color:white;
@@ -38,10 +63,13 @@
 </head>
 <body style="background-color: black">
     <h1>STRANGER THINGS</h1>
-    <a href="season1.html">Season 1</a>
-    <a href="season2.html">Season 2</a>
-    <a href="season3.html">Season 3</a>
-    <a href="season4.html">Season 4</a>
+    <section class="container">
+        <a href="season1.html">Season 1</a>
+        <a href="season2.html">Season 2</a>
+        <a href="season3.html">Season 3</a>
+        <a href="season4.html">Season 4</a>
+    </section>
+    <br>
     <p>*Spoiler's Ahead*</p>
 </body>
 </html>
