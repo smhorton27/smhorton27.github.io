@@ -1,0 +1,35 @@
+@font-face{
+    font-family: "Druk Text Wide";
+    src: url("druktextwide.otf")
+}
+
+.topnav{
+    position:fixed;
+    top:0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color:#44290B;
+    font-size: 30px;
+    font-family: "europa", sans-serif;
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.topnav a{
+    color:#FFF0CF;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+.container{
+    position:relative;
+    text-align: left;
+    color:#FFF0CF;
+}
+.title{
+    font-family: Druk Text Wide;
+    font-size: 200px;
+    position: absolute;
+    bottom:8px;
+    left:16px;
+}
