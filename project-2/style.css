@@ -2,6 +2,10 @@
     font-family: "Druk Text Wide";
     src: url("druktextwide.otf")
 }
+body{
+    padding:0;
+    margin:0;
+}
 
 .topnav{
     position:fixed;
@@ -14,6 +18,7 @@
     display:flex;
     justify-content: space-between;
     width: 100%;
+    z-index: 1;
 }
 .topnav a{
     color:#FFF0CF;
@@ -26,10 +31,28 @@
     text-align: left;
     color:#FFF0CF;
 }
+img{
+    width:100%;
+}
 .title{
     font-family: Druk Text Wide;
-    font-size: 200px;
+    font-size: 150px;
     position: absolute;
-    bottom:8px;
-    left:16px;
+    bottom:80px;
+    left:80px;
+}
+.header-2{
+    margin-left: 80px;
+    font-family: Druk Text Wide;
+    font-size: 50px;
+    color: #44290B;
+    padding-top: 40px;
+}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:30px;
+    color: #44290B;
+    display:flex;
+    margin-left:80px;
+    width: 50%;
 }
