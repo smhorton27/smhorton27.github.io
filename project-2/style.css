@@ -56,3 +56,14 @@ p{
     margin-left:80px;
     width: 50%;
 }
+section.gallery {
+    margin-left:85px;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px;
+}
+.card {
+    width:500px;
+    height:500px;
+    object-fit:cover;
+}
