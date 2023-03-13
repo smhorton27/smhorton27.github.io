@@ -55,6 +55,19 @@ img{
     color: #44290B;
     padding-top: 40px;
 }
+section.box{
+    margin-left:80px;
+    width:50%;
+    background-color:#966414;
+    padding-top: 5px;
+    padding-bottom:5px;
+}
+.box p{
+    color:#FFF0CF;
+}
+.checked{
+    color: #FF8B68;
+}
 p{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size:30px;
@@ -72,5 +85,24 @@ section.gallery {
 .card {
     width:500px;
     height:500px;
+    overflow:hidden;
+}
+.card img {
+    width:auto;
     object-fit:cover;
+}
+.footer{
+    top:0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color:#44290B;
+    font-size: 30px;
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
+}
+.footer p{
+    color:#FFF0CF;
+    font-family: "europa", sans-serif;
 }
