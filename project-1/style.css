@@ -33,6 +33,24 @@
 img{
     width:100%;
 }
+.hero{
+    height: 900px;
+    width:100%;
+    overflow:hidden;
+}
+.hero::after{
+    display:block;
+    position:relative;
+    background-image:linear-gradient(to bottom, rgba(255,255,255,0)0, #000 100%);
+    margin-top:-150px;
+    height:150px;
+    width:100%;
+    content:'';
+}
+.hero img{
+    height:auto;
+    width:100%;
+}
 p{
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -96,9 +114,38 @@ section.gallery p {
     margin-bottom: 90px;
     margin-top: 70px;
 }
+.redflex{
+    display:flex;
+    width:50%;
+    flex-direction:column;
+}
+.description{
+    display:flex;
+    width:40%;
+}
 p.villain{
     margin-left: 85px;
-    width:40%;
+    padding-right:0px;
+}
+.villain-container{
+    display:flex;
+    justify-content:flex-end;
+}
+img.villain{
+    width:50%;
+    height:auto;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+img.villain:hover{
+    animation-name:pulse;
+    animation-timing-function: ease;
+}
+@keyframes pulse{
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-50px); }
+    100% { transform: translateY(0); }
 }
 .moments{
     display:flex;
@@ -117,6 +164,11 @@ li{
     height:670px;
     object-fit:cover;
     border:8px solid rgb(93, 161, 203);
+    overflow:hidden;
+}
+.notable img{
+    height:100%;
+    width:auto;
 }
 .content{
     flex:auto;
@@ -126,4 +178,16 @@ li{
     align-items: center;
     max-width:150px;
     padding: 70px;
+    animation-duration: 1s;
+    animation-iteration-count:infinite;
+    transform-origin:bottom;
+}
+.netflix:hover{
+    animation-name:bounce;
+    animation-timing-function:ease;
+}
+@keyframes bounce{
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-50px); }
+    100% { transform: translateY(0); }
 }
