@@ -30,9 +30,25 @@ body{
     position:relative;
     text-align: left;
     color:#FFF0CF;
+    animation: fadeInUp;
+    animation-duration:1s;
 }
 img{
     width:100%;
+}
+img.homecards{
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+img.homecards:hover{
+    animation-name:heartBeat;
+    animation-timing-function: ease;
+}
+@keyframes heartBeat{
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-50px); }
+    100% { transform: translateY(0); }
 }
 .title{
     font-family: Druk Text Wide;
@@ -67,6 +83,8 @@ section.box{
 }
 .box p{
     color:#FFF0CF;
+    animation: fadeInLeft;
+    animation-duration:1s;
 }
 .checked{
     color: #FF8B68;
@@ -108,6 +126,18 @@ section.gallery {
     width:auto;
     height:110%;
     object-fit:cover;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+.card img:hover{
+    animation-name:rubberBand;
+    animation-timing-function: ease;
+}
+@keyframes rubberBand{
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-50px); }
+    100% { transform: translateY(0); }
 }
 .card img.adjust {
     width:auto;
